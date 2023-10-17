@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axi</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.0-dist/css/bootstrap.min.css">
+</head>
+<body style="font-family:serif ;background-color: whitesmoke;">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand mx-3 " href="index.html"><img src="images/logo_300x300.webp" alt="" class="w-75"></a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-light line2" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light line2" href="about.html">About</a>
+          </li>
+          <li class="nav-item line2">
+            <a class="nav-link text-light  " href="contact.html" >Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex" id="links" >
+          
+          <button class="btn btn-outline-secondary me-2" type="submit"  ><a href="login.html" class="link-offset-2 link-underline link-underline-opacity-0 text-light ">Log in</a></button>
+          <button class="btn btn-outline-secondary me-2" type="submit"  ><a href="register.html" class="link-offset-2 link-underline link-underline-opacity-0 text-light" >Sign up</a></button>
+        </div>
+        <ul id="user_info" class=" nav">
+          <li class="nav-item mt-1 line"><a href="index.html" id="user" style="color: rgb(235, 235, 178);"></a></li>
+          <li class="nav-item shopping-cart mx-3  ">
+  
+              <button class="btn btn-outline-secondary position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-shopping-cart text-light"  class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="count">
+                  0
+                </span></button>
+              <!-- <div class="carts_products">
+                  <div></div>
+                  <a href="cartsproducts.html">View All Products</a>
+              </div> -->
+          </li>
+          <li class="nav-item"><button class="btn btn-outline-secondary text-light" type="submit" id="logout">Logout</button></li>
+  
+      </ul>
+      </div>
+      
+    
+    </div>
+  </nav>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" >
+    <div class="offcanvas-header">
+      <h3 id="offcanvasRightLabel">My Cart</h3>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body container">
+      <p id="CartItem" class="text-center"> My Cart is empty</p>
+    </div>
+    
+    <div id="root"></div>
+    <h5 class="text-center bg-black m-0 p-2 carts_products"><a href="cartsproducts.html" class=" text-light" style="text-decoration: none;">View All Products</a></h5>
+    <div class=" container foot">
+      <h5 class=" mt-3">Total</h5>
+      <h5 id="total" class=" mt-3">$ 0.00</h5>
+    </div>
+    
+  </div>
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner"  >
+    <div class="carousel-item active"  >
+      <img src="images/perfume-header-17-wp.jpg" class="d-block  w-100" alt="..." style="height: 70vh;" >
+    </div>
+    <div class="carousel-item">
+      <img src="images/55.jpgv=1691390421" class="d-block w-100 " alt="..." style="height: 70vh;">
+    </div>
+    <div class="carousel-item">
+      <img src="images/vv.webp" class="d-block w-100  " alt="..." style="height: 70vh;">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+<div class=" col-5 input-group bg-secondary-subtle p-2 " >
+  <select id="selectSearch" class=" col-6 form-select  me-3" aria-label="Default select example" style="border-radius: 5px;">
+    <option value="0" selected>Search with name</option>
+    <option value="1">Search with category</option>
+  </select>
+
+  <div class=" col-6 form-outline ">
+    <input type="search" id="find" class="form-control col-5"  placeholder="Search"/>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="container">
+  <h2 class="text-center my-5">Chose Your Favorite</h2>
+  <div id="nothing-alert" class="">Nothing Found</div>
+  <div class="row row-cols-1 row-cols-md-3 g-4 products" id="myProducts">
+  </div>
+</div>
+
+
+
+<footer class="text-center text-white mt-5  "   style="background-color: #222" >
+  <!-- Grid container -->
+  <!-- <div class="container p-4"></div> -->
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-white" href="https://AyaElrefaay580@gmail.com">AyaElrefaay580</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+  <script src="./js/script.js"></script>
+  <script src="./bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

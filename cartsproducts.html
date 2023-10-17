@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axi</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.0-dist/css/bootstrap.min.css">
+</head>
+<body style="font-family:serif ;background-color: whitesmoke;">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand mx-3 " href="index.html"><img src="images/logo_300x300.webp" alt="" class="w-75"></a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-light line2" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light line2" href="about.html">About</a>
+          </li>
+          <li class="nav-item line2">
+            <a class="nav-link text-light  " href="contact.html" >Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex" id="links" >
+          
+          <button class="btn btn-outline-secondary me-2" type="submit"  ><a href="login.html" class="link-offset-2 link-underline link-underline-opacity-0 text-light ">Log in</a></button>
+          <button class="btn btn-outline-secondary me-2" type="submit"  ><a href="register.html" class="link-offset-2 link-underline link-underline-opacity-0 text-light" >Sign up</a></button>
+        </div>
+        <ul id="user_info" class=" nav">
+          <li class="nav-item mt-1 line"><a href="index.html" id="user" style="color: rgb(235, 235, 178);"></a></li>
+          <li class="nav-item shopping-cart mx-3  ">
+  
+              <button class="btn btn-outline-secondary position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-shopping-cart text-light"  class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="count">
+                  0
+                </span></button>
+              <!-- <div class="carts_products">
+                  <div></div>
+                  <a href="cartsproducts.html">View All Products</a>
+              </div> -->
+          </li>
+          <li class="nav-item"><button class="btn btn-outline-secondary" type="submit" id="logout"><a href="#" id="logout" class="link-offset-2 link-underline link-underline-opacity-0 text-light">Log Out</a></button></li>
+  
+      </ul>
+      </div>
+      
+    
+    </div>
+  </nav>
+
+
+  <section class="home">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4 products pt-5" id="myProducts">
+      </div>
+    </div>
+</section>
+
+
+  <script src="./js/script.js"></script>
+  <script src="./js/cartsproducts.js"></script>
+  <script src="./bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <!-- <link rel="html" href="about.html"> -->
+</head>
+<body style="font-family:serif ; background-color: whitesmoke;">
+    <section>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                Dropdown button
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand mx-3 " href="index.html"><img src="images/logo_300x300.webp" alt="" class="w-75"></a>
+              <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon bg-light"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-light" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light " href="contact.html" >Contact</a>
+                  </li>
+                </ul>
+                <div class="d-flex" id="links" > 
+                  
+                  <button class="btn btn-outline-secondary me-2" type="submit"><a href="login.html" class="link-offset-2 link-underline link-underline-opacity-0 text-light ">Log in</a></button>
+                  <button class="btn btn-outline-secondary" type="submit"><a href="register.html" class="link-offset-2 link-underline link-underline-opacity-0 text-light">Sign up</a></button>
+                </div>
+              </div>
+
+              <ul id="user_info" class=" nav">
+                <li class="nav-item mt-1 line"><a href="index.html" id="user" style="color: rgb(235, 235, 178);"></a></li>
+                <li class="nav-item shopping-cart mx-3  ">
+        
+                    <button class="btn btn-outline-secondary position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fas fa-shopping-cart text-light"  class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="count">
+                        0
+                      </span></button>
+                    <div class="carts_products">
+                        <div></div>
+                        <!-- <a href="cartsproducts.html">View All Products</a> -->
+                    </div>
+                </li>
+                <li class="nav-item"><button class="btn btn-outline-secondary" type="submit" id="logout"><a href="#" id="logout" class="link-offset-2 link-underline link-underline-opacity-0 text-light">Log Out</a></button></li>
+        
+            </ul>
+            </div>
+          </nav>
+      </section>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h3 id="offcanvasRightLabel">My Cart</h3>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body container">
+          <p id="CartItem" class="text-center"> My Cart is empty</p>
+        </div>
+        <div id="root"></div>
+        <div class=" container foot">
+          <h5 class=" mt-3">Total</h5>
+          <h5 id="total" class=" mt-3">$ 0.00</h5>
+        </div>
+      </div>
+
+    <section class="">
+          <div class="container">
+            <div class="clearfix mt-5">
+              <img src="images/about.webp" class="col-md-6 float-md-start mb-3 ms-md-3 me-5" alt="...">
+              <h2 class="pt-5 text-uppercase fw-bold" style="color: brown;">Welcome to Axii </h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis autem vel est deserunt dolorem quam quasi. Voluptatum consectetur non delectus vitae? Rerum laudantium animi excepturi, repellat, dicta deserunt illo porro neque accusamus minus cupiditate modi sed autem aperiam voluptatem eaque quidem ullam necessitatibus commodi enim eius itaque quaerat, voluptatum incidunt?</p>
+              <h4 class="pt-5" style="color: brown;">WE START AT 2000 </h4>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis autem vel est deserunt dolorem quam quasi. Voluptatum consectetur non delectus vitae? Rerum laudantium animi excepturi, repellat, dicta deserunt illo porro neque accusamus minus cupiditate modi sed autem aperiam voluptatem eaque quidem ullam necessitatibus commodi enim eius itaque quaerat, voluptatum incidunt?</p>
+            </div>
+            <div class="clearfix mt-5 ms-3">
+              <img src="images/about.webp" class="col-md-6 float-md-end mb-3 ms-md-3 ms-3 " alt="...">
+              <h4 class="pt-5 text-uppercase" style="color: brown;">WE START AT 2000 </h4>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis autem vel est deserunt dolorem quam quasi. Voluptatum consectetur non delectus vitae? Rerum laudantium animi excepturi, repellat, dicta deserunt illo porro neque accusamus minus cupiditate modi sed autem aperiam voluptatem eaque quidem ullam necessitatibus commodi enim eius itaque quaerat, voluptatum incidunt?</p>
+              <h4 class="pt-5" style="color: brown;">here with you for over 23 years </h4>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis autem vel est deserunt dolorem quam quasi. Voluptatum consectetur non delectus vitae? Rerum laudantium animi excepturi, repellat, dicta deserunt illo porro neque accusamus minus cupiditate modi sed autem aperiam voluptatem eaque quidem ullam necessitatibus commodi enim eius itaque quaerat, voluptatum incidunt?</p>
+            </div>
+          </div>
+    </section>
+
+      <script src="s./js/script.js"></script>
+      <script src="./bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
